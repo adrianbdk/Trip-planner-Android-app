@@ -1,6 +1,8 @@
 package com.example.trip_planner_andrid_app
 import SeatIdAdapter
+import android.content.Intent
 import android.icu.text.SimpleDateFormat
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -9,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.payment_success_screen.*
 import java.util.*
 
 
@@ -37,10 +40,10 @@ class ProfileFlightsDetails: AppCompatActivity() {
         destinationIataTextView.text = destinationIata
 
         var payButton: Button = findViewById(R.id.payButton)
-        val payButtonBackground : FrameLayout = findViewById(R.id.payButtonBackground)
-        payButton.visibility = View.INVISIBLE
+//        val payButtonBackground : FrameLayout = findViewById(R.id.payButtonBackground)
+        payButton.visibility = View.GONE
         payButton.isEnabled = false
-        payButtonBackground.visibility = View.INVISIBLE
+//        payButtonBackground.visibility = View.GONE
 
         for(seat in seatValues?.value!!){
 //            println(seat)
@@ -70,6 +73,15 @@ class ProfileFlightsDetails: AppCompatActivity() {
         mRecyclerView!!.layoutManager = mLayoutManager
         mAdapter = SeatIdAdapter(listOfSeats)
         mRecyclerView!!.adapter = mAdapter
+
+        val searchButton: Button = findViewById(R.id.searchButton)
+        searchButton.visibility = View.VISIBLE
+        searchButton.isEnabled = true
+        searchButton.setOnClickListener {
+            val openURL = Intent(Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://www.google.com/maps/search/$arrivalPlaceIntent+hotel/")
+            startActivity(openURL)
+        }
     }
 
     private fun getDayName(flightData: String?): String {

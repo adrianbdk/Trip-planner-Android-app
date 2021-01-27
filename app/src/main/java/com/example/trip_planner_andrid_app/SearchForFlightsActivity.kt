@@ -98,8 +98,8 @@ class SearchForFlightsActivity : AppCompatActivity() {
                     return@setOnClickListener
                 }
             }
-            val originPlace = wylotZ.text.toString().split("-")[1].trim() + "-sky"
-            val destinationPlace = przylotDo.text.toString().split("-")[1].trim() + "-sky"
+            val originPlace = wylotZ.text.toString().substring(wylotZ.text.toString().lastIndexOf("-")+1).trim() + "-sky"
+            val destinationPlace = przylotDo.text.toString().substring(przylotDo.text.toString().lastIndexOf("-")+1).trim() + "-sky"
             val intent = Intent(this, FlightsListActivity::class.java)
 
             intent.putExtra("originPlace", originPlace)

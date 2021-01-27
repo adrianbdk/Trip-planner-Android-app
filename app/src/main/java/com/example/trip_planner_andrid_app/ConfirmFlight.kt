@@ -4,9 +4,8 @@ import SeatIdAdapterTwoWay
 import android.content.Intent
 import android.icu.text.SimpleDateFormat
 import android.os.Bundle
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.Toast
+import android.view.View
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -163,6 +162,10 @@ class ConfirmFlight: AppCompatActivity() {
             setIntent(intent)
             startActivity(intent)
         }
+
+        val searchButton: Button = findViewById(R.id.searchButton)
+        searchButton.visibility = View.GONE
+        searchButton.isEnabled = false
     }
 
     private fun convertPriceToString(price: Double) : String {
