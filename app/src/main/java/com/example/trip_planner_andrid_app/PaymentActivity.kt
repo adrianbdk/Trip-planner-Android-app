@@ -43,6 +43,9 @@ class PaymentActivity : AppCompatActivity() {
 
                 btn_later.setOnClickListener {
                     finishAffinity()
+                    intent = Intent(this, SearchForFlightsActivity::class.java)
+                    intent.flags = Intent.FLAG_FROM_BACKGROUND
+                    startActivity(intent)
                     startActivity(Intent(this, ProfileActivity::class.java))
                 }
 

@@ -430,8 +430,7 @@ class ProfileActivity : AppCompatActivity() {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START)
         } else {
-            finish()
-            startActivity(Intent(this, SearchForFlightsActivity()::class.java))
+            super.onBackPressed()
         }
     }
 

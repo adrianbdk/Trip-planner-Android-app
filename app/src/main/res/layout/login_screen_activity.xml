@@ -96,7 +96,7 @@
                     android:textColorHint="#FFFFFF"
                     android:paddingBottom="10dp"
                     android:paddingTop="10dp"
-                    android:paddingStart="5dp"
+                    android:paddingStart="10dp"
                     android:paddingEnd="5dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginEnd="30dp"
