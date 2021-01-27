@@ -474,13 +474,13 @@ class SelectSeatActivity : AppCompatActivity() {
         seatsEconomyArray.add(seatEconomy52)
 
 
-        seatListener(seatEconomy44)
-        seatsHashMap.put(seatEconomy44, "17A")
-        seatsEconomyArray.add(seatEconomy44)
-
         seatListener(seatEconomy45)
-        seatsHashMap.put(seatEconomy45, "17B")
+        seatsHashMap.put(seatEconomy45, "17A")
         seatsEconomyArray.add(seatEconomy45)
+
+        seatListener(seatEconomy46)
+        seatsHashMap.put(seatEconomy46, "17B")
+        seatsEconomyArray.add(seatEconomy46)
 
         seatListener(seatEconomy53)
         seatsHashMap.put(seatEconomy53, "17C")
@@ -491,13 +491,13 @@ class SelectSeatActivity : AppCompatActivity() {
         seatsEconomyArray.add(seatEconomy54)
 
 
-        seatListener(seatEconomy46)
-        seatsHashMap.put(seatEconomy46, "18A")
-        seatsEconomyArray.add(seatEconomy46)
-
         seatListener(seatEconomy47)
-        seatsHashMap.put(seatEconomy47, "18B")
+        seatsHashMap.put(seatEconomy47, "18A")
         seatsEconomyArray.add(seatEconomy47)
+
+        seatListener(seatEconomy48)
+        seatsHashMap.put(seatEconomy48, "18B")
+        seatsEconomyArray.add(seatEconomy48)
 
         seatListener(seatEconomy55)
         seatsHashMap.put(seatEconomy55, "18C")
@@ -508,13 +508,13 @@ class SelectSeatActivity : AppCompatActivity() {
         seatsEconomyArray.add(seatEconomy56)
 
 
-        seatListener(seatEconomy48)
-        seatsHashMap.put(seatEconomy48, "19A")
-        seatsEconomyArray.add(seatEconomy48)
-
         seatListener(seatEconomy49)
-        seatsHashMap.put(seatEconomy49, "19B")
+        seatsHashMap.put(seatEconomy49, "19A")
         seatsEconomyArray.add(seatEconomy49)
+
+        seatListener(seatEconomy50)
+        seatsHashMap.put(seatEconomy50, "19B")
+        seatsEconomyArray.add(seatEconomy50)
 
         seatListener(seatEconomy57)
         seatsHashMap.put(seatEconomy57, "19C")
